@@ -15,7 +15,7 @@ The project is built with React, TypeScript, Node.js, Express, Prisma ORM, and S
 
 #### Option 1: Docker
 ```bash
-git clone <repository_url>
+git clone https://github.com/LucasPNunes1/PMAccelerator-FullStack
 cd fullStackPMaccelerator
 docker compose up --build -d
 ```
