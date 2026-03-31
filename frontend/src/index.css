@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-headline: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+
+  --color-primary: #8c4a00;
+  --color-primary-container: #fd8b00;
+  --color-secondary-container: #ffca53;
+  --color-surface: #f6f6f8;
+  --color-surface-container-low: #f0f1f3;
+  --color-on-surface: #2d2f31;
+  --color-on-surface-variant: #5a5c5d;
+  --color-danger: #dc2626;
+  --color-danger-light: #fef2f2;
+  --color-danger-border: #fecaca;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-on-surface font-sans antialiased;
+  }
+}
+
+@layer utilities {
+  .hero-mesh {
+    @apply bg-surface-container-low border border-white/40;
+  }
+
+  .glass-card {
+    @apply bg-white/70 backdrop-blur-xl border border-white/40;
+  }
+
+  .editorial-gradient {
+    background: linear-gradient(135deg, #f0f1f3 0%, #ffffff 100%);
+    @apply text-on-surface border border-white/40;
+  }
+
+  /* Custom scrollbar for forecast chips */
+  .forecast-scroll::-webkit-scrollbar {
+    height: 0;
+  }
+}

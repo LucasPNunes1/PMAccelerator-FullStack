@@ -1,0 +1,5 @@
+{
+  "name": "Solar Weather",
+  "description": "An editorial weather experience focused on the radiant beauty of the sun and golden hour predictions.",
+  "requestFramePermissions": ["geolocation"]
+}

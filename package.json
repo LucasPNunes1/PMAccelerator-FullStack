@@ -1,0 +1,8 @@
+{
+  "name": "full-stack-pm-accelerator",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "start": "docker compose up --build -d"
+  }
+}
